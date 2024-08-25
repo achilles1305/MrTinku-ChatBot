@@ -1,0 +1,76 @@
+/* Chat icon */
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#chat-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Chat pop-up window */
+#chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 101;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#chat-header {
+    background-color: #008080; /* Good green color */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#chat-messages {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+#send-btn {
+    width: 20%;
+    padding: 10px;
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Chat pop-up animation */
+#chat-popup.show {
+    display: block;
+    animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
