@@ -61,7 +61,7 @@ python manage.py runserver
 Watch the demo video to see Tinku in action:
 
 [![Demo Video]](Preview/Demo.mp4)  
-*Click the image above to watch the demo video.*
+*Click the Link above to watch the demo video.*
 
 ## How It Works
 
